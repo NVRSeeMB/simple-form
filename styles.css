@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+#title {
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+}
+
+label {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+}
+
+#description {
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+label[id*='option'] {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+body {
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+ header {
+    text-align: center;
+}
+            
+#bg-survey {
+    background: linear-gradient(to left, #ccccff 0%, #ffcccc 100%);
+    padding: 20px 10px 20px 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+#survey-form {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-grup {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    border-radius: 4px;
+    font-family: Poppins, sans-serif;
+}
+
+label[id*='label'] {
+    margin: 2px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+::placeholder {
+    font-family: Poppins, sans-serif;
+}
+
+#submit {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid green;
+    background-color: #99ff99;
+    height: 30px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1 id='title'>freeCodeCamp Survey Form</h1>
+      <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main id='bg-survey'>
+      <div id='transbox'>
+        <form id='survey-form'>
+          <div id='form-grup'>
+            <!-- input name -->
+            <label for='name' id='name-label'>Name</label>
+            <input id='name' type='text' placeholder='Enter your name' name='name' required>
+          </div>
+          <div id='form-grup'>
+            <!-- input email -->
+            <label for='email' id='email-label'>Email</label>
+            <input id='email' type='email' placeholder='Enter your Email' name='email' required>
+          </div>
+          <div id='form-grup'>
+            <!-- input age -->
+            <label for='age' id='number-label'>Age</label>
+            <input id='number' type='number' placeholder='Age' name='age' min='16' max='100' required>
+          </div>
+          <div id='form-grup'>
+            <!-- input which one??? -->
+            <label for='dropdown' id='dropdown-label'>Which option best describes your current role?</label>
+            <input id='dropdown-input' list='dropdown' placeholder='Select current role' required>
+            <datalist id='dropdown'>
+              <option value='Student'>
+              <option value='Full time job'>
+              <option value='Full time learner'>
+              <option value='Prefer not to say'>
+              <option value='Other'>
+            </datalist>
+          </div>
+          <div id='form-grup'>
+            <!-- input would you??? -->
+            <label for='rad' id='radio-label'>Would you recommend freeCodeCamp to a friend?</label>
+            <label for='rad' id='option-1'>
+              <input id='1-rad' type='radio' name='rad' value='Definitely' checked>Definitely
+            </label>
+            <label for='rad' id='option-2'>
+              <input id='2-rad' type='radio' name='rad' value='Maybe'>Maybe
+            </label>
+            <label for='rad' id='option-3'>
+              <input id='3-rad' type='radio' name='rad' value='Nope'>Nope
+            </label>
+          </div>
+          <div id='form-grup'>
+            <!-- input checkboxeesss -->
+            <label for='check' id='checkbox-label' required>What would you like to see improved?</label>
+            <label>
+              <input id='ch-1' type='checkbox' name='check' value='Front-end Projects'>Front-end Projects
+            </label>
+            <label>
+              <input id='ch-2' type='checkbox' name='check' value='Back-end Projects'>Back-end Projects
+            </label>
+            <label>
+              <input id='ch-3' type='checkbox' name='check' value='Data Visualization'>Data Visualization
+            </label>
+            <label>
+              <input id='ch-4' type='checkbox' name='check' value='Challenges'>Challenges
+            </label>
+          </div>
+          <div id='form-grup'>
+            <!-- input textareaaaaaa -->
+            <label for='comments' id='textarea-label'>Any comments or suggestions?</label>
+            <textarea id='comments' name='comments' placeholder='Enter your comment here...'></textarea>
+          </div>
+          <div id='form-grup'>
+            <!-- input button submit -->
+            <label for='submit' id='submit-label'>
+              <input id='submit' name='submit' type='submit' placeholder='Submit' required>
+            </label>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
+  
+
